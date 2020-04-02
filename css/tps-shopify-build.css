@@ -1491,6 +1491,8 @@ a {
     top: 0%;
     right: 0%;
     bottom: auto;
+    padding-right: 8px;
+    padding-left: 8px;
     background-color: transparent;
     background-image: url('../images/arrow-right.svg');
     background-position: 50% 50%;
@@ -1780,6 +1782,10 @@ a {
   }
   .logo_light {
     max-width: 190px;
+  }
+  .form_submit_button {
+    padding-right: 2px;
+    padding-left: 2px;
   }
 }
 
