@@ -1,0 +1,16 @@
+{
+  "uploadOnSave": false,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "ftp.rogsiteworks.com",
+  "target": "/public_html/tps",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "atomsync@rogsiteworks.com",
+  "password": "asd567_JKL",
+  "watch": [],
+  "transport": "ftp",
+  "port": "21"
+}
