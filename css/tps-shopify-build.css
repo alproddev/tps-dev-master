@@ -1472,17 +1472,27 @@ a {
 
 .educate_body {
   padding-right: 16px;
-  padding-bottom: 100px;
+  padding-bottom: 0px;
   padding-left: 16px;
 }
 
-.educate_body_grid {
+.educate_body_container {
+  display: -ms-grid;
+  display: grid;
   grid-auto-flow: row;
-  grid-row-gap: 32px;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-areas: ".";
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-rows: auto 16px auto;
+  grid-template-rows: auto auto;
+}
+
+.educate_body_grid {
   grid-template-areas: "Area Area";
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)) minmax(270px, 1fr);
-  -ms-grid-rows: ;
-  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .home_educate_link_block {
@@ -1510,6 +1520,32 @@ a {
   background-image: url('../images/placeholder_8.jpg');
   background-position: 50% 50%;
   background-size: cover;
+}
+
+.educate_grid {
+  grid-row-gap: 32px;
+  grid-template-areas: "left-top-area left-top-area";
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.collection_product_slide {
+  height: auto;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.collection_slider_master {
+  height: 514px;
+  background-color: transparent;
+}
+
+.grid {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
 }
 
 @media screen and (max-width: 991px) {
@@ -1762,11 +1798,32 @@ a {
   .educate_filter_button {
     margin-bottom: 12px;
   }
+  .educate_body_container {
+    grid-auto-flow: row dense;
+    grid-template-areas: ".";
+    grid-template-columns: repeat(auto-fit, auto);
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+  }
   .educate_body_grid {
     grid-auto-flow: row dense;
     grid-template-areas: "_2-Col-Left-Large _2-Col-Left-Large _2-Col-Left-Large" ". . ." ". _2-col-right-large _2-col-right-large";
     -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .educate_grid {
+    grid-auto-flow: row dense;
+    grid-template-areas: "_2-Col-Left-Large _2-Col-Left-Large _2-Col-Left-Large" ". . ." ". _2-col-right-large _2-col-right-large";
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .collection_product_slide {
+    overflow: scroll;
+  }
+  .collection_slider_master {
+    overflow: scroll;
+    width: 100%;
+    height: 494px;
   }
 }
 
@@ -1904,6 +1961,10 @@ a {
     border-bottom: 1px solid #000;
     border-right-style: none;
   }
+  .collection_slider_master {
+    overflow: scroll;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -2034,6 +2095,12 @@ a {
     padding-right: 2px;
     padding-left: 2px;
   }
+  .collection_product_slide {
+    overflow: scroll;
+  }
+  .collection_slider_master {
+    overflow: scroll;
+  }
 }
 
 #w-node-b7c808c504eb-3dfdd77d {
@@ -2047,11 +2114,26 @@ a {
   grid-column-end: span 1;
 }
 
-#w-node-8e5a4242bffa-0034e914 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
+#w-node-b69ea130f337-0034e914 {
   -ms-grid-column-span: 2;
-  grid-area: Area;
+  grid-column-end: 3;
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: 2;
+  -ms-grid-row: 1;
+  grid-row-start: 1;
+}
+
+#w-node-92c6edeefa58-0034e914 {
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+  -ms-grid-column: span 2;
+  grid-column-start: span 2;
+  -ms-grid-column-span: 2;
+  grid-column-end: span 2;
 }
 
 @media screen and (max-width: 991px) {
@@ -2064,6 +2146,22 @@ a {
     grid-column-start: span 3;
     -ms-grid-column-span: 3;
     grid-column-end: span 3;
+  }
+  #w-node-92c6edeefa58-0034e914 {
+    -ms-grid-column: span 1;
+    grid-column-start: span 1;
+    -ms-grid-column-span: 1;
+    grid-column-end: span 1;
+  }
+  #w-node-a7b3269c499a-0034e914 {
+    -ms-grid-column: span 2;
+    grid-column-start: span 2;
+    -ms-grid-column-span: 2;
+    grid-column-end: span 2;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
   }
 }
 
