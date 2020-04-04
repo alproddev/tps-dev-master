@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--  Last Published: Fri Apr 03 2020 20:57:37 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sat Apr 04 2020 20:35:32 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5e82944389fedf1a88422809" data-wf-site="5e80ba10fea9a36636d928ef">
 <head>
   <meta charset="utf-8">
@@ -29,6 +29,9 @@
     height: 2px;
     width: 18%;
     }
+.nav_item_icon svg{
+vertical-align: middle;
+}
 .title-animate, .body-animate {opacity: 0;}
 /************** 
 Keyframes
@@ -48,6 +51,43 @@ Keyframes
 -webkit-appearance: none;
 border-radius: 0; }
 </style>
+  <script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-63px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+<!-- Custom JS for background color on scrolling -->
+    $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    if(scroll < 10){
+        $('.nav_change').css('color', '#FFFFFF');
+    } else{
+        $('.nav_change').css('color', '#000000');
+    }
+});
+    $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    if(scroll < 10){
+        $('.nav_light').css('background', 'transparent');
+    } else{
+        $('.nav_light').css('background', '#FFFFFF');
+    }
+});
+    $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    if(scroll < 10){
+        $('.logo_light').css('filter', 'invert(0)');
+    } else{
+        $('.logo_light').css('filter', 'invert(1)');
+    }
+});
+</script>
 </head>
 <body>
   <div class="ds_system_section">
@@ -76,12 +116,12 @@ border-radius: 0; }
             <div class="body_2_regular">Our Story</div>
           </a>
         </nav><a href="#" class="brand w-nav-brand"><img src="../images/tps_full_width.svg" alt="" class="logo_dark"></a>
-        <nav role="navigation" class="right_nav_menu w-nav-menu"><a href="#" class="nav_item_right w-inline-block"><img src="../images/search.svg" alt="" class="nav_item_icon"><div class="body_2_regular">Search</div></a><a href="#" class="nav_item_right w-inline-block"><img src="../images/user.svg" alt="" class="nav_item_icon"><div class="body_2_regular">Account</div></a><a href="#" class="nav_item_right w-inline-block"><img src="../images/bag.svg" alt="" class="nav_item_icon"><div class="cart_counter">2</div><div class="body_2_regular">Cart</div></a></nav><a href="#" class="tablet_mobile_cart w-inline-block"><img src="../images/bag.svg" alt=""><div class="cart_counter">2</div></a></div>
+        <nav role="navigation" class="right_nav_menu w-nav-menu"><a href="#" class="nav_item_right w-inline-block w-clearfix"><img src="../images/search.svg" alt="" class="nav_item_icon"><div class="body_2_regular">Search</div></a><a href="#" class="nav_item_right w-inline-block w-clearfix"><img src="../images/user.svg" alt="" class="nav_item_icon"><div class="body_2_regular">Account</div></a><a href="#" class="nav_item_right w-inline-block w-clearfix"><img src="../images/bag.svg" alt="" class="nav_item_icon"><div class="cart_counter">2</div><div class="body_2_regular">Cart</div></a></nav><a href="#" class="tablet_mobile_cart w-inline-block"><img src="../images/bag.svg" alt=""><div class="cart_counter">2</div></a></div>
     </div>
   </div>
   <div class="ds_system_section background_dark">
     <div class="style_header">Navigation Light</div>
-    <div data-collapse="medium" data-animation="default" data-duration="400" class="nav_light w-nav">
+    <div data-collapse="medium" data-animation="default" data-duration="400" id="navbar" class="nav_light w-nav">
       <div class="nav_container">
         <div data-w-id="fddc1abf-c958-97b6-6474-53af382c5c98" class="header_nav_button invert_dark_to_light w-nav-button">
           <div class="top-line"></div>
@@ -89,20 +129,34 @@ border-radius: 0; }
           <div class="bottom-line"></div>
         </div>
         <nav role="navigation" class="left_nav_menu w-nav-menu">
-          <a href="#" class="nav_item_left w-inline-block">
-            <div class="body_2_regular text_white nav_hover">Shop</div>
+          <a href="#" class="nav_item_left nav_text_color_change w-inline-block">
+            <div class="body_2_regular text_white nav_change">Shop</div>
           </a>
           <a href="#" class="nav_item_left w-inline-block">
-            <div class="body_2_regular text_white nav_hover">Educate</div>
+            <div class="body_2_regular text_white nav_change">Educate</div>
           </a>
           <a href="#" class="nav_item_left w-inline-block">
-            <div class="body_2_regular text_white nav_hover">Inspire</div>
+            <div class="body_2_regular text_white nav_change">Inspire</div>
           </a>
           <a href="#" class="nav_item_left w-inline-block">
-            <div class="body_2_regular text_white nav_hover">Our Story</div>
+            <div class="body_2_regular text_white nav_change">Our Story</div>
           </a>
         </nav><a href="#" class="brand w-nav-brand"><img src="../images/tps_full_width_invert.svg" alt="" class="logo_light"></a>
-        <nav role="navigation" class="right_nav_menu w-nav-menu"><a href="#" class="nav_item_right w-inline-block"><img src="../images/search.svg" alt="" class="nav_item_icon invert_dark_to_light"><div class="body_2_regular text_white nav_hover">Search</div></a><a href="#" class="nav_item_right w-inline-block"><img src="../images/user.svg" alt="" class="nav_item_icon invert_dark_to_light"><div class="body_2_regular text_white nav_hover">Account</div></a><a href="#" class="nav_item_right w-inline-block"><img src="../images/bag.svg" alt="" class="nav_item_icon invert_dark_to_light"><div class="cart_counter">2</div><div class="body_2_regular text_white nav_hover">Cart</div></a></nav><a href="#" class="tablet_mobile_cart w-inline-block"><img src="../images/bag.svg" alt="" class="cart_icon invert_dark_to_light"><div class="cart_counter">2</div></a></div>
+        <nav role="navigation" class="right_nav_menu w-nav-menu">
+          <a href="#" class="nav_item_right w-inline-block w-clearfix">
+            <div class="nav_item_icon nav_change w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search" preserveaspectratio="xMinYMin meet"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65" vertical-align="middle"></line></svg></div>
+            <div class="body_2_regular text_white nav_change">Search</div>
+          </a>
+          <a href="#" class="nav_item_right w-inline-block w-clearfix">
+            <div class="nav_item_icon nav_change w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div>
+            <div class="body_2_regular text_white nav_change">Account</div>
+          </a>
+          <a href="#" class="nav_item_right w-inline-block w-clearfix">
+            <div class="cart_counter">2</div>
+            <div class="nav_item_icon nav_change w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg></div>
+            <div class="body_2_regular text_white nav_change">Cart</div>
+          </a>
+        </nav><a href="#" class="tablet_mobile_cart w-inline-block"><img src="../images/bag.svg" alt="" class="cart_icon invert_dark_to_light"><div class="cart_counter">2</div></a></div>
     </div>
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5e80ba10fea9a36636d928ef" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -110,6 +164,7 @@ border-radius: 0; }
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
   <script type="text/javascript" src="https://uploads-ssl.webflow.com/5d8580bbf0c5f31a607bb0e9/5d869fa34a6557a94b540e09_animateText.txt"></script>
   <script type="text/javascript" src="https://uploads-ssl.webflow.com/5d8580bbf0c5f31a607bb0e9/5d869fb28de89c32979638f9_inView.txt"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
   <script>
 $(document).ready(function(){
 	var pArray = [].slice.call(document.querySelectorAll('.title-animate'));
