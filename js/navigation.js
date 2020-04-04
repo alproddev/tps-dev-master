@@ -14,10 +14,8 @@ window.onscroll = function() {
     document.getElementById("navbar").style.top = "-63px";
   }
   prevScrollpos = currentScrollPos;
-}
+});
 
-
-<!-- Custom JS for background color on scrolling -->
 
     $(window).scroll(function(){
     var scroll = $(window).scrollTop();
@@ -27,7 +25,6 @@ window.onscroll = function() {
         $('.nav_change').css('color', '#000000');
     }
 });
-
 
 
     $(window).scroll(function(){
