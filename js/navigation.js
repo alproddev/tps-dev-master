@@ -34,6 +34,20 @@ window.onscroll = function() {
     } else{
         $('.nav_light').css('background', '#FFFFFF');
     }
+    if(scroll < 150){
+        $('.nav_light').css('border-color', '#FFFFFF');
+    } else{
+        $('.nav_light').css('border-color', '#000000');
+    }
+});
+
+$(window).scroll(function(){
+var scroll = $(window).scrollTop();
+if(scroll < 150){
+    $('.nav_dark').css('background', 'transparent');
+} else{
+    $('.nav_dark').css('background', '#FFFFFF');
+}
 });
 
     $(window).scroll(function(){
@@ -48,8 +62,26 @@ window.onscroll = function() {
 $(window).scroll(function(){
 var scroll = $(window).scrollTop();
 if(scroll < 50){
-    $('.hamburger_invert').css('background', '#FFFFFF');
+    $('.brand_invert').css('filter', 'invert(1)');
 } else{
-    $('.hamburger_invert').css('background', '#000000');
+    $('.brand_invert').css('filter', 'invert(1)');
+}
+});
+
+$(window).scroll(function(){
+var scroll = $(window).scrollTop();
+if(scroll < 50){
+    $('.hamburger_light').css('background', '#FFFFFF');
+} else{
+    $('.hamburger_light').css('background', '#000000');
+}
+});
+
+$(window).scroll(function(){
+var scroll = $(window).scrollTop();
+if(scroll < 50){
+    $('.hamburger_dark').css('background', '#000');
+} else{
+    $('.hamburger_dark').css('background', '#000000');
 }
 });
