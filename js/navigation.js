@@ -17,6 +17,18 @@ window.onscroll = function() {
 };
 
 
+$(window).scroll(function() {
+
+if ($(this).scrollTop()>0)
+{
+$('.promo_banner').fadeOut();
+}
+else
+{
+$('.promo_banner').fadeIn();
+}
+});
+
     $(window).scroll(function(){
     var scroll = $(window).scrollTop();
     if(scroll < 50){
