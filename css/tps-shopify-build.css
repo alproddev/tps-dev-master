@@ -1891,6 +1891,20 @@ a {
   text-align: center;
 }
 
+.search_results_header {
+  padding: 60px 16px;
+}
+
+.search_results_educate_grid_see_more {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.search_results_educate_grid_see_more.top_medium {
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+}
+
 @media screen and (max-width: 991px) {
   .nav_container {
     height: 60px;
@@ -2391,6 +2405,9 @@ a {
   .collection_s_column_right {
     height: auto;
     padding: 24px 16px;
+  }
+  .search_results_educate_grid_see_more {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
 
