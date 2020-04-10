@@ -1,0 +1,43 @@
+/*
+Color swaches > Add new class with name "swathc_+your_color_name"
+examples:
+ .swatch_midnight_blue: {background-color: #123;}
+ .swatch_black: {background-color: #000;}
+
+So when you give product > variant > color > value Midnight Blue - swatch color for it will become #123
+Dont worry about color name capitalisation. All color values will be lowercased and separated by "_" before creating CSS class
+*/
+
+.swatch_yellow_gold {background-color:#ECBB34; }
+.swatch_white_gold {background-color: #DFDFDF; }
+.swatch_rose_gold {background-color:#C98C83; }
+.swatch_platinum {background-color:#DFDFDF; }
+
+
+/*
+Article grid icons format > .blog_icon_iconName
+Example: .blog_icon_ring:{background-image: url("icon.svg");}
+Usage in articles > icon=iconName(e.g ring)
+*/
+
+.blog_icon_ring_in_box {background-image: url("https://cdn.shopify.com/s/files/1/0372/7320/6922/files/ring_in_box.png?v=1586558018");}
+.blog_icon_shopping_bag {background-image: url("https://cdn.shopify.com/s/files/1/0372/7320/6922/files/shopping_bag.png?v=1586558018");}
+.blog_icon_single_ring {background-image: url("https://cdn.shopify.com/s/files/1/0372/7320/6922/files/single_ring.png?v=1586558018");}
+.blog_icon_round_diamond {background-image: url("https://cdn.shopify.com/s/files/1/0372/7320/6922/files/diamon_round.png?v=1586558018");}
+.blog_icon_ring_stack {background-image: url("https://cdn.shopify.com/s/files/1/0372/7320/6922/files/stack.png?v=1586558018");}
+.blog_icon_holding_hands {background-image: url("https://cdn.shopify.com/s/files/1/0372/7320/6922/files/holding_hands.png?v=1586558018");}
+.blog_icon_bracelet {background-image: url("https://cdn.shopify.com/s/files/1/0372/7320/6922/files/bracelet.png?v=1586558018");}
+.blog_icon_ring {background-image: url("https://cdn.shopify.com/s/files/1/0372/7320/6922/files/Ring.png?v=1586558480");}
+.blog_icon_couples {background-image: url("https://cdn.shopify.com/s/files/1/0372/7320/6922/files/Couples.png?v=1586558480");}
+.blog_icon_qa {background-image: url("https://cdn.shopify.com/s/files/1/0372/7320/6922/files/QA.png?v=1586558480");}
+.blog_icon_ring_in_box_alt {background-image: url("https://cdn.shopify.com/s/files/1/0372/7320/6922/files/Ring_Box.png?v=1586558480");}
+.blog_icon_edit {background-image: url("https://cdn.shopify.com/s/files/1/0372/7320/6922/files/Edit.png?v=1586558480");}
+.blog_icon_heart {background-image: url("https://cdn.shopify.com/s/files/1/0372/7320/6922/files/Heart.png?v=1586558480");}
+
+/*
+Mega Menu Headline's icon
+Usage: mega_menu_headlineName_icon:{background-image: url("icon.svg");}
+
+you can also use svg path or whatever you want to style that element
+
+*/
