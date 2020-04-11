@@ -1909,7 +1909,7 @@ a {
 
 .filter_wrap.top_medium {
   position: relative;
-  display: block;
+  display: none;
   width: 100%;
   padding-bottom: 24px;
   border-bottom: 1px solid #a0a0a0;
