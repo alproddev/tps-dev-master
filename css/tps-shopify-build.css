@@ -1498,7 +1498,7 @@ a {
   right: 0%;
   bottom: auto;
   margin-top: -90px;
-  padding: 240px 16px 48px;
+  padding: 158px 16px 48px;
   background-color: rgba(207, 220, 229, 0.5);
 }
 
@@ -2987,6 +2987,9 @@ a {
   .mobile_menu_column_2 {
     padding-right: 0px;
     padding-left: 0px;
+  }
+  .educate_header {
+    padding-top: 138px;
   }
   .educate_quick_links.top_medium {
     padding-left: 0px;
