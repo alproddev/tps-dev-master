@@ -1,0 +1,136 @@
+.max-width-cont.product_showcase_wrap {
+    max-width: 900px;
+    width: 100%;
+    float: left;
+    width: 65%;
+}
+
+.item-block img {
+	max-width: 100%;
+}
+
+.showcase_inner {
+	display: flex;
+}
+
+
+.showcase_nav {
+
+    width: 25%;
+    max-width: 150px;
+    max-height: 380px;
+    overflow-y: scroll;
+
+}
+
+.product_preview_wrap .item-block {
+   width: 100%;
+   text-align:center;
+}
+
+.showcase_nav .item-block {
+    text-align: center;
+    margin: 5px;
+}
+
+.showcase_nav .item-block.is-nav-selected {
+    border: .5px solid rgba(0, 0, 0, 0.05);
+}
+
+.showcase_nav .item-block img {
+	width: 100%;
+	max-width: 75px;
+	margin: 0px auto;
+}
+
+.showcase_nav .item-block:hover {
+    cursor: pointer;
+}
+
+.product_preview_wrap  {
+    width: 100%;
+    padding-left: 3%;
+}
+
+
+.showcase_nav.mobile_nav {
+    display: none;
+}
+
+
+
+/* Scroll bar styling */
+
+.showcase_nav::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+  }
+
+.showcase_nav::-webkit-scrollbar-track {
+    background-color: #ededed;
+  }
+
+.showcase_nav::-webkit-scrollbar-thumb {
+    background-color: #d0d0d0;
+  }
+
+.showcase_nav {
+    scrollbar-color: #d0d0d0 #ededed;
+    scrollbar-width: thin;
+}
+
+
+/* Code for mobile and tablets */
+
+@media only screen and (max-width: 992px) {
+
+    .max-width-cont.product_showcase_wrap {
+        width: 100%;
+        max-width: initial;
+    }
+
+    .showcase_nav .item-block {
+        text-align: center;
+        margin: 5px 10px;
+        min-width: 85px;
+    }
+
+    .showcase_inner {
+        display: block;
+    }
+
+    .showcase_nav.mobile_nav {
+        max-width: initial;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .showcase_nav.desktop_nav {
+        display: none;
+    }
+
+
+    .showcase_nav.mobile_nav {
+        display: flex;
+    }
+
+    .showcase_nav {
+        width: 100%;
+        /* max-height: 380px; */
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+
+    .product_preview_wrap {
+        width: 100%;
+        padding-left: 3%;
+        flex-direction: row;
+        flex: 0 0 100%;
+    }
+
+
+
+
+
+}
