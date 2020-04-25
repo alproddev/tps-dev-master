@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!--  Last Published: Tue Apr 21 2020 13:07:23 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="5e89f03e0b4db15d2ea8f01a" data-wf-site="5e80ba10fea9a36636d928ef">
+<html data-wf-page="5e9cc80fe014f9f2baa796ba" data-wf-site="5e80ba10fea9a36636d928ef">
 <head>
   <meta charset="utf-8">
-  <title>Search Form</title>
-  <meta content="Search Form" property="og:title">
+  <title>Cart-Full</title>
+  <meta content="Cart-Full" property="og:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/components.css" rel="stylesheet" type="text/css">
@@ -56,30 +56,45 @@ border-radius: 0; }
 </style>
 </head>
 <body>
-  <div class="search">
-    <div class="search_container w-container">
-      <div class="mega_menu_title search_title"><img src="images/chevron-down.svg" alt="" class="chevron_left">
-        <div class="medium_heading_3 mega_menu_header">Search</div>
-      </div>
-      <div class="form-block w-form">
-        <form id="email-form" name="email-form" data-name="Email Form" class="search_form"><input type="text" class="search_input w-input" maxlength="256" name="name" data-name="Name" id="name"><input type="submit" value=" " data-wait="Please wait..." class="search_button w-button">
-          <div class="body_2_regular">Search by product name, category, etc.</div>
-        </form>
-        <div class="w-form-done">
-          <div>Thank you! Your submission has been received!</div>
-        </div>
-        <div class="w-form-fail">
-          <div>Oops! Something went wrong while submitting the form.</div>
-        </div>
-      </div>
-      <div class="popular_searches top_large">
-        <div class="eyebrow_medium">Most Popular Searches:</div>
-        <div class="body_2_regular search_example top_small">Ring</div>
-        <div class="body_2_regular search_example top_small">Stack Set</div>
-        <div class="body_2_regular search_example top_small">Bracelet</div>
+  <div class="cart_container">
+    <div class="cart_header">
+      <div class="cart_heading"><img src="images/close.svg" alt="" class="cart_close">
+        <div class="medium_heading_3 cart_title">Your Bag</div>
       </div>
     </div>
-  </div>
+    <div class="cart_full_container top_large">
+      <div class="cart_item top_medium">
+        <div class="cart_item_3_col w-row">
+          <div class="cart_column_1 w-col w-col-3"><img src="images/R7065-01.jpg" srcset="images/R7065-01-p-500.jpeg 500w, images/R7065-01-p-800.jpeg 800w, images/R7065-01-p-1080.jpeg 1080w, images/R7065-01.jpg 1500w" sizes="84px" alt="" class="cart_image"></div>
+          <div class="cart_column_2 w-col w-col-6">
+            <div class="cart_item_title">Floral Diamond Twist Band</div>
+            <div class="body_3_medium cart_price top_xxsmall">$650</div>
+            <div class="body_3_regular cart_variant top_xxsmall">Gold Purity — 14k Gold</div>
+            <div class="body_3_regular cart_variant top_xxsmall">Color — White Gold</div>
+            <div class="body_3_regular cart_variant top_xxsmall">Size — 8</div>
+            <div class="body_3_regular cart_variant top_xxsmall">Engraving — This is mine</div>
+          </div>
+          <div class="cart_column_3 w-col w-col-3">
+            <div class="cart_add_minus"><img src="images/minus.svg" alt="" class="cart_minus">
+              <div class="body_2_medium cart_count">1</div><img src="images/plus.svg" alt="" class="cart_add"></div>
+            <div class="top_small"><a href="#" class="cart_remove_link">Remove</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cart_action">
+      <div class="cart_cost">
+        <div class="cart_subtotal_2_col w-row">
+          <div class="subtotal_col_1 w-col w-col-6 w-col-small-6 w-col-tiny-6">
+            <div class="body_2_medium">Subtotal</div>
+          </div>
+          <div class="subtotal_col_2 w-col w-col-6 w-col-small-6 w-col-tiny-6">
+            <div class="body_2_medium">$650</div>
+          </div>
+        </div>
+      </div>
+      <div class="body_3_regular text_centered top_medium">Shipping &amp; taxes calculated at checkout</div><a href="#" class="cart_checkout w-button">Checkout</a></div>
+  </div><a href="#" class="cart_open w-button">Open Cart</a>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5e80ba10fea9a36636d928ef" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/tps-shopify-build.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
