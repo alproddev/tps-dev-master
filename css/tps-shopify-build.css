@@ -153,6 +153,8 @@ a {
 }
 
 .default_heading_4 {
+  padding-right: 16px;
+  padding-left: 16px;
   font-family: orpheuspro, sans-serif;
   color: #000;
   font-size: 18px;
@@ -276,6 +278,10 @@ a {
   line-height: 25px;
   font-weight: 400;
   letter-spacing: 1px;
+}
+
+.body_1_regular.os_top_body {
+  max-width: 90%;
 }
 
 .body_2_regular {
@@ -3090,7 +3096,58 @@ a {
   flex: 1;
 }
 
+.os_section_1.top_xxlarge {
+  max-width: 2000px;
+}
+
+.os_top_column_right {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.os_section_2.top_xxlarge {
+  max-width: 2000px;
+}
+
+.os_bottom_columns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.os_bottom_column_left {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.os_bottom_column_right {
+  padding-right: 5%;
+  padding-left: 5%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.os_section_3.top_xxlarge {
+  max-width: 2000px;
+}
+
+.os_3_container {
+  text-align: center;
+}
+
 @media screen and (max-width: 991px) {
+  .decortive_heading_1.os_fullwidth_text {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .body_1_regular.top_small.os_top_body.os_fullwidth_text {
+    max-width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
   .nav_container {
     height: 60px;
     padding-right: 24px;
@@ -3527,9 +3584,19 @@ a {
     padding-top: 180px;
     padding-bottom: 68px;
   }
+  .os_top_column_left {
+    display: none;
+  }
+  .os_top_image.top_large {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .default_heading_4 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
   .body_2_medium.faq_anchor_lnk {
     display: inline;
     padding-right: 32px;
@@ -3865,6 +3932,8 @@ a {
     line-height: 28px;
   }
   .default_heading_4 {
+    padding-top: 12px;
+    padding-bottom: 12px;
     font-size: 18px;
     line-height: 28px;
   }
@@ -4100,6 +4169,16 @@ a {
   }
   .sub-nav-menu {
     width: 300%;
+  }
+  .os_bottom_columns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .os_bottom_column_right {
+    margin-top: 40px;
   }
 }
 
