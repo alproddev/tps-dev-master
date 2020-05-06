@@ -2682,6 +2682,14 @@ a {
   color: #000;
 }
 
+.radio-button-field.variant_switch.active {
+  border-color: #000;
+}
+
+.radio-button-field.variant_switch.checked {
+  border-color: #000;
+}
+
 .radio-button-field.color_swatch_variant_switch {
   display: inline-block;
   min-width: auto;
@@ -2691,6 +2699,10 @@ a {
   border-style: solid;
   border-color: #a0a0a0;
   background-color: transparent;
+}
+
+.radio-button-field.color_swatch_variant_switch.checked {
+  border-color: #000;
 }
 
 .radio-button-wrapper {
