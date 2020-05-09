@@ -950,7 +950,7 @@ a {
 
 .collection_thumb_image {
   display: block;
-  max-width: 140px;
+  max-width: 95%;
   margin-top: 40px;
   margin-right: auto;
   margin-left: auto;
@@ -3579,6 +3579,9 @@ a {
   .collection_thumb_upper {
     width: 100%;
   }
+  .collection_thumb_image {
+    max-width: 70%;
+  }
   .collection_thumb_lower {
     width: 100%;
     padding-right: 8px;
@@ -4127,6 +4130,7 @@ a {
     height: 200px;
   }
   .collection_thumb_image {
+    max-width: 51%;
     margin-top: 20px;
   }
   .slider_mask {
@@ -4515,6 +4519,9 @@ a {
   }
   .item_collection_thumb {
     width: 100%;
+  }
+  .collection_thumb_image {
+    max-width: 90%;
   }
   .educate_slide {
     overflow: scroll;
