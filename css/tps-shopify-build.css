@@ -967,7 +967,8 @@ a {
   bottom: auto;
   z-index: 0;
   display: block;
-  max-width: 80%;
+  max-height: 240px;
+  max-width: 90%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1871,6 +1872,11 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   -ms-grid-rows: auto;
   grid-template-rows: auto;
+}
+
+.collection_all_grid.top_large {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .colleciton_s_columns {
@@ -3617,10 +3623,16 @@ a {
   }
   .collection_thumb_upper {
     width: 100%;
+    height: 220px;
   }
   .collection_thumb_image {
-    top: 33px;
-    max-width: 80%;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    width: auto;
+    max-height: 210px;
+    max-width: 90%;
   }
   .collection_thumb_lower {
     width: 100%;
@@ -3833,6 +3845,10 @@ a {
     grid-column-gap: 16px;
     grid-row-gap: 16px;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
+  .collection_all_grid.top_large {
+    margin-right: auto;
+    margin-left: auto;
   }
   .collection_s_grid {
     grid-auto-flow: row dense;
@@ -4170,12 +4186,8 @@ a {
     height: 200px;
   }
   .collection_thumb_image {
-    left: 0%;
-    top: 0%;
-    right: 0%;
-    bottom: auto;
-    max-width: 65%;
-    margin-top: 20px;
+    max-height: 190px;
+    max-width: 90%;
   }
   .slider_mask {
     width: 100%;
@@ -4279,6 +4291,10 @@ a {
   .collection_filters {
     padding-top: 40px;
     padding-bottom: 32px;
+  }
+  .collection_all_grid.top_large {
+    margin-right: auto;
+    margin-left: auto;
   }
   .colleciton_s_columns {
     height: auto;
@@ -4564,8 +4580,12 @@ a {
   .item_collection_thumb {
     width: 100%;
   }
+  .collection_thumb_upper {
+    height: 175px;
+  }
   .collection_thumb_image {
-    max-width: 60%;
+    max-height: 98%;
+    margin-top: 0px;
   }
   .educate_slide {
     overflow: scroll;
@@ -4611,6 +4631,10 @@ a {
   .collection_all_grid {
     justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(164px, 1fr));
+  }
+  .collection_all_grid.top_large {
+    margin-right: auto;
+    margin-left: auto;
   }
   .column {
     display: none;
