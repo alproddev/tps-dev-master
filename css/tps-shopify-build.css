@@ -856,8 +856,8 @@ a {
   grid-template-areas: "home-collection-grid-image" "home-collection-grid-image";
   -ms-grid-columns: 1.75fr 16px 1fr 16px 1fr 16px 1fr;
   grid-template-columns: 1.75fr 1fr 1fr 1fr;
-  -ms-grid-rows: auto 16px 1.25fr;
-  grid-template-rows: auto 1.25fr;
+  -ms-grid-rows: auto 16px auto;
+  grid-template-rows: auto auto;
 }
 
 .collection_editorial_image {
@@ -952,7 +952,6 @@ a {
 
 .collection_thumb_upper {
   position: relative;
-  width: 100%;
   height: 250px;
   border: 1px solid #a0a0a0;
   border-top-left-radius: 2px;
@@ -964,7 +963,6 @@ a {
   z-index: 0;
   display: block;
   max-height: 240px;
-  max-width: 90%;
   margin-top: 2px;
   margin-right: auto;
   margin-left: auto;
@@ -3629,7 +3627,6 @@ a {
     bottom: auto;
     width: auto;
     max-height: 210px;
-    max-width: 90%;
   }
   .collection_thumb_lower {
     width: 100%;
@@ -4184,7 +4181,6 @@ a {
   }
   .collection_thumb_image {
     max-height: 190px;
-    max-width: 90%;
   }
   .slider_mask {
     width: 100%;
@@ -4581,8 +4577,7 @@ a {
     height: 175px;
   }
   .collection_thumb_image {
-    max-height: 98%;
-    margin-top: 0px;
+    margin-top: 2px;
   }
   .educate_slide {
     overflow: scroll;
