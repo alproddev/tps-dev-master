@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--  Last Published: Mon May 11 2020 21:42:57 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Mon May 11 2020 22:07:35 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5eb99f48f87f1827c6376b42" data-wf-site="5e80ba10fea9a36636d928ef">
 <head>
   <meta charset="utf-8">
@@ -74,8 +74,8 @@ top: 20px !important;
       <div class="menu_button_container">
         <div class="menu-button w-nav-button">
           <div data-w-id="1b11ff51-2515-6512-8f85-475b8b026ad5" class="hamburger-menu-wrapper">
-            <div class="hamburger-top-line on-transparent"></div>
-            <div class="hamburger-bottom-line on-transparent"></div>
+            <div class="hamburger-top-line on-transparent line-black"></div>
+            <div class="hamburger-bottom-line on-transparent line-black"></div>
           </div>
         </div>
       </div>
@@ -338,17 +338,22 @@ $(window).scroll(function () {
 });
 </script>
   <script>
-/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-70px";
-  }
-  prevScrollpos = currentScrollPos;
-}
+$(document).ready(function () {
+  'use strict';
+   var c, currentScrollTop = 0,
+       navbar = $('#navbar');
+   $(window).scroll(function () {
+      var a = $(window).scrollTop();
+      var b = navbar.height();
+      currentScrollTop = a;
+      if (c < currentScrollTop && a > b + b) {
+        navbar.addClass("nav-down");
+      } else if (c > currentScrollTop && !(a <= b)) {
+        navbar.removeClass("nav-down");
+      }
+      c = currentScrollTop;
+  });
+});
 </script>
   <script>
 $(window).scroll(function() {    

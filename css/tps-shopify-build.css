@@ -3370,6 +3370,14 @@ a {
   background-color: #fff;
 }
 
+.nav-parent.nav-background-transparent.nav-down {
+  opacity: 0;
+}
+
+.nav-parent.nav-background-transparent.nav-up {
+  opacity: 1;
+}
+
 .nav-parent.nav-background-transparent-black {
   border-top-color: #000;
   border-bottom-color: #000;
@@ -3377,6 +3385,10 @@ a {
 
 .nav-parent.nav-background-transparent-black.transparent-background-switch {
   background-color: #fff;
+}
+
+.nav-parent.nav-background-transparent-black.nav-down {
+  opacity: 0;
 }
 
 .nav-parent.scrollup {
