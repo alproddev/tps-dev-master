@@ -961,14 +961,11 @@ a {
 }
 
 .collection_thumb_image {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  bottom: auto;
   z-index: 0;
   display: block;
   max-height: 240px;
   max-width: 90%;
+  margin-top: 2px;
   margin-right: auto;
   margin-left: auto;
 }
