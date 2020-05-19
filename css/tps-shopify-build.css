@@ -2804,7 +2804,7 @@ a {
 }
 
 .cart_container {
-  position: absolute;
+  position: fixed;
   left: auto;
   top: 0%;
   right: 0%;

@@ -17152,16 +17152,22 @@ Webflow.define('dropdown', module.exports = function ($, _) {
 
   function makeDropdownFousoutHandler(data) {
     return debounce(function (evt) {
+      var relatedTarget = evt.relatedTarget,
+          target = evt.target;
+      var menuEl = data.el[0];
       /**
        * Close menu
        * With focusout events, the `relatedTarget` is the element that will next receive focus.
        * @see: https://developer.mozilla.org/en-US/docs/Web/API/FocusEvent/relatedTarget
        */
-      var menuContainsFocus = data.el[0].contains(evt.relatedTarget);
+
+      var menuContainsFocus = menuEl.contains(relatedTarget) || menuEl.contains(target);
 
       if (!menuContainsFocus) {
         close(data);
       }
+
+      return evt.stopPropagation();
     });
   } // Export module
 
