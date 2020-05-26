@@ -959,6 +959,10 @@ a {
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   background-color: #fff;
+  background-image: url('../images/R7065-01.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .collection_thumb_image {
