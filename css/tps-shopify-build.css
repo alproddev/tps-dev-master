@@ -871,6 +871,7 @@ a {
 }
 
 .item_collection_thumb {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3502,7 +3503,7 @@ a {
 }
 
 .prod_thumb_top_area {
-  position: relative;
+  position: absolute;
   left: 0%;
   top: 0%;
   right: 0%;
